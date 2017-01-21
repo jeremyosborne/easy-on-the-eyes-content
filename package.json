@@ -1,0 +1,32 @@
+{
+  "name": "easy-on-the-eyes-content",
+  "version": "0.0.1",
+  "description": "the web, simply (content module)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha xforms/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyosborne/easy-on-the-eyes-content.git"
+  },
+  "keywords": [
+    "reader",
+    "simple",
+    "web",
+    "content"
+  ],
+  "author": "Jeremy Osborne <jeremywosborne@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeremyosborne/easy-on-the-eyes-content/issues"
+  },
+  "homepage": "https://github.com/jeremyosborne/easy-on-the-eyes-content#readme",
+  "standard": {},
+  "dependencies": {
+    "isomorphic-fetch": "2.2.1"
+  },
+  "devDependencies": {
+    "mocha": "3.2.0"
+  }
+}
