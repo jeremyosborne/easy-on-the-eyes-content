@@ -1,4 +1,4 @@
-# 0.0.2 (release TBD)
+# 0.0.2 (release 2017-01-24)
 
 * Try out [reselect](https://github.com/reactjs/reselect) for funsies.
 * Minor lib source code movement.
