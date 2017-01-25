@@ -2,7 +2,7 @@
   "name": "easy-on-the-eyes-content",
   "version": "0.0.1",
   "description": "the web, simply (content module)",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha xforms/*.test.js"
   },
@@ -27,6 +27,7 @@
     "isomorphic-fetch": "2.2.1"
   },
   "devDependencies": {
-    "mocha": "3.2.0"
+    "mocha": "3.2.0",
+    "reselect": "^2.5.4"
   }
 }
