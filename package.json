@@ -4,6 +4,8 @@
   "description": "the web, simply (content module)",
   "main": "src/index.js",
   "scripts": {
+    "lint-js": "eslint \"src/**/*.js?(x)\"",
+    "lint": "npm run lint-js",
     "test": "mocha xforms/*.test.js"
   },
   "repository": {
@@ -22,11 +24,16 @@
     "url": "https://github.com/jeremyosborne/easy-on-the-eyes-content/issues"
   },
   "homepage": "https://github.com/jeremyosborne/easy-on-the-eyes-content#readme",
-  "standard": {},
   "dependencies": {
     "isomorphic-fetch": "2.2.1"
   },
   "devDependencies": {
+    "eslint": "^3.16.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-react": "^4.2.0",
+    "eslint-plugin-promise": "^3.4.2",
+    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-standard": "^2.0.1",
     "mocha": "3.2.0",
     "reselect": "^2.5.4"
   }
