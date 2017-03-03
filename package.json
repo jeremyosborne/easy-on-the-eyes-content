@@ -4,9 +4,9 @@
   "description": "the web, simply (content module)",
   "main": "src/index.js",
   "scripts": {
-    "lint-js": "eslint \"src/**/*.js?(x)\"",
-    "lint": "npm run lint-js",
-    "test": "mocha xforms/*.test.js",
+    "lint:js": "eslint \"src/**/*.js?(x)\"",
+    "lint": "npm run lint:js",
+    "test": "mocha src/*.test.js",
     "commit": "commit-wizard"
   },
   "repository": {
