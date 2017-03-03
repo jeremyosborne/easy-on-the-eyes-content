@@ -6,7 +6,8 @@
   "scripts": {
     "lint-js": "eslint \"src/**/*.js?(x)\"",
     "lint": "npm run lint-js",
-    "test": "mocha xforms/*.test.js"
+    "test": "mocha xforms/*.test.js",
+    "commit": "commit-wizard"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,20 @@
     "eslint-plugin-react": "^6.10.0",
     "eslint-plugin-standard": "^2.0.1",
     "mocha": "3.2.0",
+    "pre-git": "^3.14.0",
     "reselect": "^2.5.4"
+  },
+  "config": {
+    "pre-git": {
+      "pre-commit": [
+        "npm run lint"
+      ],
+      "pre-push": [
+        "npm test"
+      ],
+      "post-commit": [],
+      "post-checkout": [],
+      "post-merge": []
+    }
   }
 }
