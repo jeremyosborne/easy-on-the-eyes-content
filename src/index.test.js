@@ -3,22 +3,20 @@
 // Normal transform, assumed to be useful for any website.
 //
 var assert = require('assert')
-var mod = require('./index')
+var content = require('./index')
 
-describe('content()', function () {
-  it('returns an object', function () {
-    assert(mod.content)
-  })
-
-  it('allows overrides', function () {
-    const overrides = {
-      content: {
-        text: 'hi'
+describe('content', function () {
+  describe('create()', function () {
+    it('allows overrides', function () {
+      const overrides = {
+        content: {
+          text: 'hi'
+        }
       }
-    }
-    const c = mod.content(overrides)
-    assert(c.content.text === 'hi')
-    // Basic structure remains.
-    assert('type' in c.content)
+      const c = content.create(overrides)
+      assert(c.content.text === 'hi')
+      // Basic structure remains.
+      assert('type' in c.content)
+    })
   })
 })
