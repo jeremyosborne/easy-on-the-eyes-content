@@ -2,7 +2,7 @@
  * The basic content data type.
  */
 
-const lodash = require('lodash')
+const _ = require('lodash')
 
 // Basic content data type.
 const contentTemplate = {
@@ -32,7 +32,10 @@ const contentTemplate = {
  * @param {object} overrides Overrides for content. Assumes correct format.
  * @return {object} Basic content object.
  */
-const content = function (overrides) {
-  return lodash.merge({}, contentTemplate, overrides || {})
+const create = function (overrides) {
+  return _.merge({}, contentTemplate, overrides || {})
 }
-module.exports.content = content
+
+module.exports = {
+  create,
+}
